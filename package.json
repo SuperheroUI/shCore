@@ -1,0 +1,24 @@
+{
+  "name": "sh-core",
+  "version": "0.1.0",
+  "description": "Base SASS and React files for SuperheroUI components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superheroui/shCore.git"
+  },
+  "keywords": [
+    "react",
+    "componets",
+    "insidesales.com"
+  ],
+  "author": "Kevin <kevinbatchelor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superheroui/shCore/issues"
+  },
+  "homepage": "https://github.com/superheroui/shCore#readme"
+}

@@ -1,0 +1,99 @@
+@import '../fonts/icons/style';
+@import '../fonts/roboto/condensed/style';
+@import '../fonts/roboto/regular/style';
+
+$color-font: rgba(255, 255, 255, 1);
+$color-font-label: rgba($color-font, .4);
+
+$color-transparent: rgba(0, 0, 0, 0);
+
+$color-box-background: rgba(255, 255, 255, 1);
+$color-box-background1: rgba($color-box-background, .8);
+$color-box-background2: rgba($color-box-background, .6);
+$color-box-background3: rgba($color-box-background, .4);
+$color-box-background4: rgba($color-box-background, .2);
+$color-box-background5: rgba($color-box-background, .1);
+
+$color-box-dark-background: rgba(0, 0, 0, 1);
+$color-box-dark-background1: rgba($color-box-dark-background, .8);
+$color-box-dark-background2: rgba($color-box-dark-background, .6);
+$color-box-dark-background3: rgba($color-box-dark-background, .4);
+$color-box-dark-background4: rgba($color-box-dark-background, .2);
+$color-box-dark-background5: rgba($color-box-dark-background, .1);
+
+$color-line: rgba(255, 255, 255, 1);
+$color-line1: rgba($color-line, .8);
+$color-line2: rgba($color-line, .6);
+$color-line3: rgba($color-line, .4);
+$color-line4: rgba($color-line, .2);
+$color-line5: rgba($color-line, .1);
+
+$color-dark-line: rgba(0, 0, 0, 1);
+$color-dark-line1: rgba($color-dark-line, .8);
+$color-dark-line2: rgba($color-dark-line, .6);
+$color-dark-line3: rgba($color-dark-line, .4);
+$color-dark-line4: rgba($color-dark-line, .2);
+$color-dark-line5: rgba($color-dark-line, .1);
+
+$colorBackgroundShade: rgba(51, 51, 51, .7);
+$colorBackground: rgb(27, 33, 38);
+
+$colorToolTipColor: rgba(0, 0, 0, .7);
+$colorToolTipBackground: rgb(255, 255, 255);
+$colorToolTipText: rgb(0, 0, 0);
+
+$color-primary: rgba(58, 182, 118, 1);
+$color-secondary: #284D51;
+$color-thirdary: #304853;
+$color-neural: rgb(144, 192, 212);
+$color-error: rgba(178, 82, 69, 1);
+
+$size-font: 14px;
+$size-font-small: $size-font - 2px;
+$size-font2: $size-font + 2px;
+$size-font3: $size-font + 4px;
+$size-font4: $size-font + 6px;
+$size-font5: $size-font + 14px;
+$size-font6: $size-font + 20px;
+$size-font7: $size-font + 30px;
+
+$size-border-radius: 4px;
+$size-border-radius-small: 2px;
+
+$font-family: 'Roboto', 'Open Sans';
+$font-family-condensed: 'Roboto Condensed', 'Open Sans';
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$time-transition: .5s;
+$time-transition-fast: $time-transition / 2;
+
+$transition: $time-transition ease-in-out;
+$transition-fast: $time-transition-fast ease-in-out;
+$transition-hover: $time-transition-fast ease-in-out;
+
+@mixin ellipsis {
+  // using this still requires element to have a width set
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin boxShadow($values...) {
+  -webkit-box-shadow: $values;
+  box-shadow: $values;
+}
+
+@mixin focus {
+  outline: 0;
+
+  &:focus {
+    @include boxShadow(inset 0 1px 1px $color-transparent, 0 0 5px $color-box-background2);
+  }
+}
+
+@mixin transition($transition-property: all, $transition-time: .5s, $method: ease-in-out, $delay: 0s) {
+  -webkit-transition: $transition-property $transition-time $method $delay;
+  transition: $transition-property $transition-time $method $delay;
+}
