@@ -1,6 +1,6 @@
 {
   "name": "sh-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Base SASS and React files for SuperheroUI components",
   "main": "index.js",
   "scripts": {
