@@ -1,0 +1,20 @@
+@import 'base';
+
+@import 'reset';
+@import 'fonts/roboto/regular/style';
+@import 'fonts/roboto/condensed/style';
+
+html {
+    font-family: $font-family;
+    font-size: $size-font;
+}
+
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient($color-secondary, $color-thirdary) fixed;
+}
