@@ -1,24 +1,29 @@
 {
-  "name": "sh-core",
-  "version": "0.1.1",
-  "description": "Base SASS and React files for SuperheroUI components",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/superheroui/shCore.git"
-  },
-  "keywords": [
-    "react",
-    "componets",
-    "insidesales.com"
-  ],
-  "author": "Kevin <kevinbatchelor@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/superheroui/shCore/issues"
-  },
-  "homepage": "https://github.com/superheroui/shCore#readme"
+    "name": "sh-core",
+    "version": "0.1.2",
+    "description": "Base SASS and React files for SuperheroUI components",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node-sass --output-style compressed src/main.scss bin/main.css & node-sass --output-style compressed -w src/main.scss bin/main.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/superheroui/shCore.git"
+    },
+    "keywords": [
+        "react",
+        "componets",
+        "insidesales.com"
+    ],
+    "author": "Kevin <kevinbatchelor@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/superheroui/shCore/issues"
+    },
+    "homepage": "https://superheroui.github.io/",
+    "devDependencies": {
+        "node-sass": "^3.8.0",
+        "nodemon": "^1.10.0"
+    }
 }
