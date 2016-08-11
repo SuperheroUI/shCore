@@ -9,7 +9,7 @@
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto Condensed'), local('Roboto-Regular'), url(../src/fonts/roboto/condensed/RobotoCondensed-Light.ttf) format('truetype');
+    src: local('Roboto Condensed'), local('Roboto-Regular'), url(../src/fonts/roboto/condensed/RobotoCondensed-Regular.ttf) format('truetype');
 }
 
 /* latin */
@@ -17,5 +17,5 @@
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Condensed Bold'), local('Roboto-Bold'), url(../src/fonts/roboto/condensed/RobotoCondensed-Light.ttf) format('truetype');
+    src: local('Roboto Condensed Bold'), local('Roboto-Bold'), url(../src/fonts/roboto/condensed/RobotoCondensed-Bold.ttf) format('truetype');
 }
