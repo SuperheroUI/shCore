@@ -1,49 +1,52 @@
 {
-    "name": "sh-core",
-    "version": "0.1.8",
-    "description": "Base SASS and React files for SuperheroUI components",
-    "main": "bin/sh-core.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "./node_modules/.bin/webpack -d --watch --config webpack.config.js",
-        "css": "node-sass --output-style compressed src/main.scss bin/main.css & node-sass --output-style compressed -w src/main.scss bin/main.css",
-        "build": "./node_modules/.bin/webpack -d --config webpack.config.js & node-sass --output-style compressed src/main.scss bin/main.css"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/superheroui/shCore.git"
-    },
-    "keywords": [
-        "react",
-        "componets",
-        "insidesales.com"
-    ],
-    "author": "Kevin <kevinbatchelor@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/superheroui/shCore/issues"
-    },
-    "homepage": "https://superheroui.github.io/",
-    "devDependencies": {
-        "babel-core": "^6.11.4",
-        "babel-loader": "^6.2.4",
-        "babel-plugin-transform-object-rest-spread": "^6.8.0",
-        "babel-preset-es2015": "^6.9.0",
-        "babel-preset-react": "^6.11.1",
-        "css-loader": "^0.23.1",
-        "isparta-loader": "^2.0.0",
-        "jasmine-core": "^2.4.1",
-        "karma": "^1.2.0",
-        "karma-cli": "^1.0.1",
-        "karma-coverage": "^1.1.1",
-        "karma-jasmine": "^1.0.2",
-        "karma-phantomjs-launcher": "^1.0.1",
-        "karma-webpack": "^1.8.0",
-        "node-sass": "^3.8.0",
-        "nodemon": "^1.10.0",
-        "phantomjs": "^2.1.7",
-        "sass-loader": "^4.0.0",
-        "style-loader": "^0.13.1",
-        "webpack": "^1.13.1"
-    }
+  "name": "sh-core",
+  "version": "0.1.9",
+  "description": "Base SASS and React files for SuperheroUI components",
+  "main": "bin/sh-core.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/webpack -d --watch --config webpack.config.js",
+    "css": "node-sass --output-style compressed src/main.scss bin/main.css & node-sass --output-style compressed -w src/main.scss bin/main.css",
+    "build": "./node_modules/.bin/webpack -d --config webpack.config.js & node-sass --output-style compressed src/main.scss bin/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superheroui/shCore.git"
+  },
+  "keywords": [
+    "react",
+    "componets",
+    "insidesales.com"
+  ],
+  "author": "Kevin <kevinbatchelor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superheroui/shCore/issues"
+  },
+  "homepage": "https://superheroui.github.io/",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "isparta-loader": "^2.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-webpack": "^1.8.0",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.10.0",
+    "phantomjs": "^2.1.7",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "lodash": "^4.15.0"
+  }
 }
