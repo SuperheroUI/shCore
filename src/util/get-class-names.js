@@ -1,6 +1,6 @@
 import * as _ from 'lodash';
 
-let getClassNames = function(classObject) {
+function getClassNames(classObject) {
     var classNames = [];
 
     for (var key in classObject) {
@@ -17,6 +17,6 @@ let getClassNames = function(classObject) {
     }
 
     return classNames.join(' ');
-};
+}
 
 export default getClassNames;
