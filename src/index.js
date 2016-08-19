@@ -1,7 +1,2 @@
-import Utils from './util';
+export { default as getClassNames } from './util/get-class-names';
 
-export {Utils};
-
-export default {
-    Utils
-}
