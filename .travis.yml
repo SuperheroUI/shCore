@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+ - 4
+before_script:
+ - npm run build
+after_success:
+ - npm run coveralls
+notifications:
+  email:
+    recipients:
+      - hbillings@insidesales.com
+      - kbatchelor@insidesales.com
+    on_success: never
+    on_failure: change

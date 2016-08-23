@@ -13,12 +13,14 @@ function getClassNames(classObject) {
         if (classObject.hasOwnProperty(key)) {
             let check = classObject[key];
             let className = _.kebabCase(key);
-            if (_.isBoolean(check) && check) {
-                classNames.push(className);
-            } else if (_.isFunction(check) && check()) {
-                classNames.push(className);
+            if (_.isFunction(check)) {
+                if (check()) {
+                    classNames.push(className);
+                }
             } else if (_.isString(check)) {
                 classNames.push(className + '-' + _.kebabCase(check));
+            } else if (check) {
+                classNames.push(className);
             }
         }
     }
