@@ -14,5 +14,5 @@ body {
     font-family: $font-family;
     font-size: $size-font;
 
-    background: linear-gradient($color-secondary, $color-thirdary) fixed;
+    background: $colorBackgroundShade;
 }
