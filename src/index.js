@@ -1,7 +1,9 @@
 import getClassNames from './util/get-class-names';
+import getDecimal from './util/get-decimal';
 
-export { getClassNames };
+export { getClassNames, getDecimal };
 
 export default {
-    getClassNames: getClassNames
+    getClassNames: getClassNames,
+    getDecimal: getDecimal
 }
