@@ -55,4 +55,22 @@ describe('getClassNames', function() {
         var classes = getClassNames(o2);
         expect(classes).toBe('d');
     });
+
+    it('checks if string value has spaces then just adds those as classes', function() {
+        var classes = getClassNames({
+            a: 'tuna',
+            include: 'salt fish',
+            c: true
+        });
+        expect(classes).toBe('a-tuna salt fish c');
+    });
+
+    it('removes duplicates', function() {
+        var classes = getClassNames({
+            a: 'tuna',
+            include: 'tuna fish',
+            tuna: true
+        });
+        expect(classes).toBe('a-tuna tuna fish');
+    });
 });
