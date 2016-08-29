@@ -1,4 +1,4 @@
-# SuperheroUI [![Build Status](https://travis-ci.org/SuperheroUI/shCore.svg?branch=master)](https://travis-ci.org/SuperheroUI/shCore) [![Coverage Status](https://coveralls.io/repos/github/SuperheroUI/shCore/badge.svg)](https://coveralls.io/github/SuperheroUI/shCore)
+# SuperheroUI [![Build Status](https://travis-ci.org/SuperheroUI/shCore.svg?branch=master)](https://travis-ci.org/SuperheroUI/shCore) [![Coverage Status](https://coveralls.io/repos/github/SuperheroUI/shCore/badge.svg)](https://coveralls.io/github/SuperheroUI/shCore) [![npm version](https://badge.fury.io/js/sh-core.svg)](https://badge.fury.io/js/sh-core)
 InsideSales.com React UI
 
 ## ShCore

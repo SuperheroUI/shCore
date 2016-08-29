@@ -18,12 +18,18 @@ function getClassNames(classObject) {
                     classNames.push(className);
                 }
             } else if (_.isString(check)) {
-                classNames.push(className + '-' + _.kebabCase(check));
+                if (className === 'include' || _.includes(check, ' ')) {
+                    classNames = _.concat(classNames, check.split(' '));
+                } else {
+                    classNames.push(className + '-' + _.kebabCase(check));
+                }
             } else if (check) {
                 classNames.push(className);
             }
         }
     }
+
+    classNames = _.uniq(classNames);
 
     return classNames.join(' ');
 }
