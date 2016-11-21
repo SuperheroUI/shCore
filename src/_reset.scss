@@ -78,3 +78,17 @@ img {
     height: auto;
     border: 0;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: $color-box-background3;
+}
