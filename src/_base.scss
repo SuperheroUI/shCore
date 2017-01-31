@@ -43,6 +43,7 @@ $color-secondary: #284D51;
 $color-thirdary: #304853;
 $color-neural: rgba(0, 202, 255, 1);
 $color-error: rgba(178, 82, 69, 1);
+$color-warning: rgb(231, 143, 43);
 
 $size-font: 14px;
 $size-font-small: $size-font - 2px;
@@ -70,26 +71,26 @@ $transition-fast: $time-transition-fast ease-in-out;
 $transition-hover: $time-transition-fast ease-in-out;
 
 @mixin ellipsis {
-  // using this still requires element to have a width set
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    // using this still requires element to have a width set
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @mixin boxShadow($values...) {
-  -webkit-box-shadow: $values;
-  box-shadow: $values;
+    -webkit-box-shadow: $values;
+    box-shadow: $values;
 }
 
 @mixin focus {
-  outline: 0;
+    outline: 0;
 
-  &:focus {
-    @include boxShadow(inset 0 1px 1px $color-transparent, 0 0 5px $color-box-background2);
-  }
+    &:focus {
+        @include boxShadow(inset 0 1px 1px $color-transparent, 0 0 5px $color-box-background2);
+    }
 }
 
 @mixin transition($transition-property: all, $transition-time: .5s, $method: ease-in-out, $delay: 0s) {
-  -webkit-transition: $transition-property $transition-time $method $delay;
-  transition: $transition-property $transition-time $method $delay;
+    -webkit-transition: $transition-property $transition-time $method $delay;
+    transition: $transition-property $transition-time $method $delay;
 }
